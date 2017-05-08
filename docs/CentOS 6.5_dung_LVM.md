@@ -62,6 +62,7 @@ yum install parted -y
 
 ### 1.6. Để sau khi boot máy ảo, có thể nhận đủ các NIC gắn vào:
 ```
+yum install http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 yum install netplug -y
 yum install wget -y
 wget https://raw.githubusercontent.com/longsube/Netplug-config/master/netplug_cent6.5 -O netplug
