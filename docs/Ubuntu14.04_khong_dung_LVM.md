@@ -147,7 +147,7 @@ virt-sysprep -a U.1404.img
 
 ### 3.3. Dùng lệnh sau để tối ưu kích thước image:
 ```
-virt-sparsify --compress U.1404.img U.1404.shrink.img
+virt-sparsify --compress --convert qcow2 U.1404.img U.1404.shrink.img
 ```
 
 ### 3.4. Upload image lên glance
