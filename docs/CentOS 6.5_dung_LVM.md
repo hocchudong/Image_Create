@@ -27,6 +27,12 @@ ifup eth0
 ```
 wget https://raw.githubusercontent.com/longsube/Image_Create/master/OpenStack%20Images/partresize.sh
 ```
+
+
+### 1.3. Để có thể chèn password khi tạo máy ảo, cài các gói sau:
+```
+yum install  cloud-init -y
+```
 ###### Cấu hình cloud-init, sửa file `/etc/cloud/cloud.cfg` như sau
 vim /etc/cloud/cloud.cfg
 ```
@@ -41,11 +47,6 @@ system_info:
     cloud_dir: /var/lib/cloud
     templates_dir: /etc/cloud/templates
   ssh_svcname: sshd
-```
-
-### 1.3. Để có thể chèn password khi tạo máy ảo, cài các gói sau:
-```
-yum install  cloud-init -y
 ```
 
 ### 1.4. Cấu hình grub để  ‘phun’ log ra cho nova (Output của lệnh : nova get-console-output)
