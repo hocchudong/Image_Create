@@ -124,9 +124,9 @@ Chọn Driver storage cho Windows 2k12R2
 ![Create VM 27](/images/win2k12_standard/win2k12_28.jpg)
 
  - Cài đặt VirtIO Driver Ballon
-![Create VM 27-1](/images/win2k12_standard/win2k12_28_00.jpg)
-![Create VM 27-2](/images/win2k12_standard/win2k12_28_01.jpg)
-![Create VM 27-3](/images/win2k12_standard/win2k12_28_02.jpg)
+![Create VM 27-1](/images/win2k12_standard/win2k12_28_00.png)
+![Create VM 27-2](/images/win2k12_standard/win2k12_28_01.png)
+![Create VM 27-3](/images/win2k12_standard/win2k12_28_02.png)
 
 ### 2.2. Kiểm tra lại việc cài đặt Driver cho NIC
 ![Create VM 28](/images/win2k12_standard/win2k12_29.jpg)
