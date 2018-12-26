@@ -185,7 +185,7 @@ EOF
 dpkg-reconfigure cloud-init
 ```
 
-![u18](/Image_Create/images/u1804/u18-27.png) 
+![u18](/images/u1804/u18-27.png) 
 
  - Clean cấu hình và restart service :
 ```sh
