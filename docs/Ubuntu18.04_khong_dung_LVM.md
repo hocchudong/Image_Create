@@ -15,8 +15,8 @@
 qemu-img create -f qcow2 /var/lib/libvirt/images/u18.qcow2  10G
 ```
 
- - Tạo máy ảo và cài đặt OS. Sau đó shutdown máy ảo
-
+ - Tạo máy ảo và cài đặt OS. Sau đó shutdown máy ảo. Tham khảo việc cài đặt Ubuntu 18.04 trên KVM tại [đây](https://github.com/nhanhoadocs/ghichep/blob/master/ManhDV/install-ubuntu1804.md)
+ 
 ### 1.2. Chỉnh sửa file .xml của máy ảo, bổ sung thêm channel trong `<devices>` (để máy host giao tiếp với máy ảo sử dụng qemu-guest-agent), sau đó save lại
 `virsh edit u18-01`
 
@@ -224,8 +224,9 @@ virt-sysprep -d u18.qcow2
 ```
 
 ### 3.3. Dùng lệnh sau để tối ưu kích thước image:
-```
+```sh
 virt-sparsify --compress --convert qcow2 /var/lib/libvirt/images/u18-02.qcow2 /var/lib/libvirt/images/u18-02.img```
+```
 
 ### 3.4. Upload image lên glance và sử dụng
 ```
